@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	width:100%;
+	height:100%;
+	
+}
+
+#banniere{
+	width: 100%;
+	background-image: url(../images/banniere.png);
+	background-repeat: no-repeat;
+	background-position-x: right;	
+}
+.logo{
+	float:left;
+	
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-image: url('http://site-blogmanager.com/background.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  min-height: 1000px;
+  overflow: hidden;
+}
+
+.menu {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.menu ul{
+    background:#d62300;
+    height:50px;
+    width:97%;
+    padding-top:20px;
+    padding-left:3%;
+}
+.menu ul li{
+    display:inline-block;
+    position:relative;
+    width:100px;
+    height:30px;
+    text-align:center;
+}
+.menu ul li a{
+    position:absolute;
+    z-index:100;
+    left:0px;
+    width:100%;
+    height:25px;
+    padding-top:5px;
+    color:#eee;
+    font-family:"TeXGyreReg",sans-serif;
+    font-weight:normal;
+    text-shadow:-1px -1px 0px rgba(0,0,0,0.2),1px 1px 0px rgba(255,255,255,0.2);
+    font-size:1.1em;
+    text-decoration:none;
+    font-size:0.9em;
+}
+.menu ul li span{
+    position:absolute;
+    visibility:hidden;
+    z-index:95;
+    display:block;
+    width:100px;
+    height:30px;
+    background:rgba(0,0,0,0.4);
+    left:0px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+}
+
+.menu ul li span{
+    left:-1600px;
+    -webkit-transition:left 0.2s ease,visibility 0s ease 0.2s;
+    -o-transition:left 0.2s ease,visibility 0s ease 0.2s;
+    -moz-transition:left 0.2s ease,visibility 0s ease 0.2s;
+    -ms-transition:left 0.2s ease,visibility 0s ease 0.2s;
+    transition:left 0.2s ease,visibility 0s ease 0.2s;
+}
+
+.menu ul li:hover span{
+    left:0px;
+    visibility:visible;
+    -webkit-transition:left 0.2s ease 0.3s,visibility 0s ease;
+    -o-transition:left 0.2s ease 0.3s,visibility 0s ease;
+    -moz-transition:left 0.2s ease 0.3s,visibility 0s ease;
+    -ms-transition:left 0.2s ease 0.3s,visibility 0s ease;
+    transition:left 0.2s ease 0.3s,visibility 0s ease;
+}
+
+
+/*****************************************************************/
+
+
+::selection {
+  background: #00a6ff;
+}
+
+a, input, textarea {
+	-webkit-transition-property:color, text; 
+	-webkit-transition-duration: 0.5s, 0.5s; 
+	-webkit-transition-timing-function: linear, ease-in;
+	
+	-moz-transition-property:color, text; 
+	-moz-transition-duration:0.5s; 
+	-moz-transition-timing-function: linear, ease-in; 
+	
+	-o-transition-property:color, text; 
+	-o-transition-duration:0.5s; 
+	-o-transition-timing-function: linear, ease-in;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding:20px;
+  float:left;
+}
+
+/******************
+** CONTACT FORM
+*******************/
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: normal;
+  color: #1380f5;
+}
+
+input[type="text"] {
+  width: 490px;
+  height: 25px;
+  margin-bottom: 10px;
+  border: 1px solid #1380f5;
+  padding-left: 10px;
+  outline: 0;
+}
+
+input[type="text"]:hover, textarea[type="text"]:hover {
+  border: 1px solid #000000;
+  color: #1380f5;
+}
+
+textarea[type="text"] {
+  width: 490px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid #1380f5;
+  padding: 5px 0 0 10px;
+  outline: 0;
+  max-width: 490px;
+  max-height: 100px;
+} 
+
+input[type="submit"] {
+  width: 100%;
+  height: 25px;
+  border: 0;
+  background: #1380f5;
+  outline: 0;
+  color: #FFFFFF;
+}
+
+input[type="submit"]:hover {
+  width: 100%;
+  height: 25px;
+  border: 0;
+  background: #000;
+  outline: 0;
+  color: #FFFFFF;
+}
+
+
+::-webkit-input-placeholder {
+   color: #1380f5;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #1380f5;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #1380f5;  
+}
+
+:-ms-input-placeholder {  
+   color: #1380f5;  
+}
+
+/******************
+** FOOTER
+*******************/
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+}
+
+.footer a {
+  color: #FFFFFF;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #1380f5;
+}
